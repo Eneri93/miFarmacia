@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">miFarmacia</string>
+    <string name="gestion_farmaco">Gestion farmaco</string>
+    <string name="nuevo_farmaco">Nuevo farmaco</string>
+    <string name="actualizar_farmaco">Actualizar/Eliminar farmaco</string>
+    <string name="mostrar_farmaco">Mostrar farmaco</string>
+    <string name="borrar_farmaco">Borrar farmaco</string>
+    <string name="actualizar_farmaco1">Actualizar farmaco</string>
+    <string name="actualizar1">Actualizar</string>
+    <string name="eliminar">Eliminar</string>
+    <string name="actualizar_farmaco2">Actualizar farmaco</string>
+    <string name="name1">Name</string>
+    <string name="codigo">Codigo</string>
+    <string name="marca">Marca</string>
+    <string name="principioA">Principio Activo</string>
+    <string name="precio">Precio</string>
+    <string name="actualizar">Actualizar</string>
+    <string name="gestion_farmacia">Gestion Farmacia</string>
+    <string name="gestionar_farmacos">Gestionar Farmacos</string>
+
+</resources>

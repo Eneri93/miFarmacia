@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5146A370"
+    tools:context=".activities.MostrarDetallesDePiloto">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="161dp"
+        android:layout_height="139dp"
+        android:layout_marginTop="64dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/droga" />
+
+    <TextView
+        android:id="@+id/txt_detalle_Nombre"
+        android:layout_width="225dp"
+        android:layout_height="32dp"
+        android:text="Nombre"
+        android:textSize="@dimen/tamLetra"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txt_detalle_codigo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.795"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_detalle_marca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="@string/marca"
+        android:textSize="@dimen/tamLetra"
+        app:layout_constraintEnd_toEndOf="@+id/txt_detalle_Nombre"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txt_detalle_Nombre"
+        app:layout_constraintTop_toBottomOf="@+id/txt_detalle_Nombre" />
+
+    <TextView
+        android:id="@+id/txt_detalle_precio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="@string/precio"
+        android:textSize="@dimen/tamLetra"
+        app:layout_constraintEnd_toEndOf="@+id/txt_detalle_marca"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txt_detalle_marca"
+        app:layout_constraintTop_toBottomOf="@+id/txt_detalle_marca" />
+
+    <TextView
+        android:id="@+id/txt_detalle_codigo"
+        android:layout_width="110dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/codigo"
+        android:textSize="@dimen/tamLetra"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/txt_detalle_principio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="440dp"
+        android:text="@string/principioA"
+        android:textSize="@dimen/tamLetra"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.575"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

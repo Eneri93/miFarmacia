@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_200"
+    tools:context=".activities.NuevoPiloto">
+
+    <TextView
+        android:id="@+id/txt_titulo_nuevo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="nuevo farmaco"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edt_codigo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/tamMargen"
+        android:ems="10"
+        android:hint="codigo de barras"
+        android:inputType="textPersonName"
+        android:textSize="@dimen/tamLetra"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_titulo_nuevo" />
+
+    <EditText
+        android:id="@+id/edt_nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/tamMargen"
+        android:ems="10"
+        android:hint="Nombre"
+        android:inputType="textPersonName"
+        android:textSize="@dimen/tamLetra"
+        app:layout_constraintEnd_toEndOf="@+id/edt_codigo"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edt_codigo"
+        app:layout_constraintTop_toBottomOf="@+id/edt_codigo" />
+
+    <EditText
+        android:id="@+id/edt_marca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/tamMargen"
+        android:ems="10"
+        android:hint="marca"
+        android:inputType="textPersonName"
+        android:textSize="@dimen/tamLetra"
+        app:layout_constraintEnd_toEndOf="@+id/edt_nombre"
+        app:layout_constraintStart_toStartOf="@+id/edt_nombre"
+        app:layout_constraintTop_toBottomOf="@+id/edt_nombre" />
+
+    <EditText
+        android:id="@+id/edt_pricipio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/tamMargen"
+        android:ems="10"
+        android:hint="principio activo"
+        android:inputType="textPersonName"
+        android:textSize="@dimen/tamLetra"
+        app:layout_constraintEnd_toEndOf="@+id/edt_marca"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/edt_marca"
+        app:layout_constraintTop_toBottomOf="@+id/edt_marca" />
+
+    <EditText
+        android:id="@+id/edt_precio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/tamMargen"
+        android:ems="10"
+        android:hint="precio"
+        android:inputType="textPersonName"
+        android:textSize="@dimen/tamLetra"
+        app:layout_constraintEnd_toEndOf="@+id/edt_pricipio"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edt_pricipio"
+        app:layout_constraintTop_toBottomOf="@+id/edt_pricipio" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="96dp"
+        android:onClick="insertarF"
+        android:text="Crear"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_precio" />
+</androidx.constraintlayout.widget.ConstraintLayout>
